@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    background-image: url(../images/tech.jpg);
+}
+
+#header {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(5, 5, 5);
+    border-bottom: 2px solid black;
+    text-align: center;
+
+    h1 {
+        margin: 0;
+        padding-top: 20px;
+        color: white;
+        font-family: 'Permanent Marker', cursive, Cambria, Georgia;
+
+        .yellow { color:#f8da79 }
+        .pink { color:#f899d1 }
+        .green { color:#6eeb89 }
+    }
+}
+
+#todo_board {
+    overflow-y: auto;
+    width: 30%;
+    height: 60vh;
+    margin: 2.5% 0% 0% 35%;
+    padding: 15px;
+    box-shadow: 5px 5px 10px black;
+    font-family: Cambria, Georgia;
+    display: flex;
+    flex-direction: column;
+    background-color: #aabac89f;
+    border: 2px solid black;
+    border-radius: 2%;
+
+    #color_picker {
+        margin: 5% auto 5% auto;
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+        height: 4em;
+        
+        div {
+            width: 25%;
+            height: 4em;
+        }
+        
+        .selected {
+            border: 1px solid black;
+        }
+        
+        #yellow_paper {
+            background-color: #f8da79;
+        }
+        #pink_paper {
+            background-color: #f899d1;  
+        }
+        #green_paper {
+            background-color: #6eeb89;
+        }
+        #yellow_paper:hover {
+            background-color: #d3ba67;
+        }
+        #pink_paper:hover {
+            background-color: #e089bc;  
+        }
+        #green_paper:hover {
+            background-color: #5fcc77;
+        }
+    }
+    
+    .todo {
+        width: 80%;
+        padding: 10px;
+        margin: 5% auto 5% auto;
+        box-shadow: 3px 3px 6px black;
+        display: flex;
+        align-items: center;
+        text-align: left;
+
+        h2 {
+            font-family: Cambria, Georgia;
+            width: 90%;
+        }
+
+        img {
+            margin: 10px;
+            height: 40px;
+            width: 10%;
+        }
+    }
+
+    input {
+        margin: 5% auto 5% 25%;
+        width: 50%;
+        border-radius: 500px;
+        border: 2px solid black;
+        padding-left: 7px;
+        outline: none;
+    }
+}
